@@ -14,6 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Container } from '@mui/material';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -68,11 +69,12 @@ function DrawerAppBar(props) {
                             MUI
                         </Typography>
                         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                            {navItems.map((item) => (
+                            {/* {navItems.map((item) => (
                                 <Button key={item} sx={{ color:'#000' }}>
                                     {item}
                                 </Button>
-                            ))}
+                            ))} */}
+                            <ConnectButton />
                         </Box>
                     </Toolbar>
                 </Container>
